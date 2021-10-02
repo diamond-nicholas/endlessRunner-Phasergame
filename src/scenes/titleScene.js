@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 import Phaser from 'phaser';
 
 export default class TitleScene extends Phaser.Scene {

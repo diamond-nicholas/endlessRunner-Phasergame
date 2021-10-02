@@ -1,5 +1,6 @@
+/* eslint-disable comma-dangle */
 import Phaser from 'phaser';
-import { getScore, sortArray } from './util.js';
+import { getScore, sortArray } from './util';
 
 export default class LeaderboardScene extends Phaser.Scene {
   constructor() {

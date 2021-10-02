@@ -1,5 +1,6 @@
+/* eslint-disable comma-dangle */
 import Phaser from 'phaser';
-import { saveScore } from './util.js';
+import { saveScore } from './util';
 
 export default class GameOverScene extends Phaser.Scene {
   constructor() {

@@ -1,12 +1,12 @@
-import 'regenerator-runtime/runtime.js';
+import 'regenerator-runtime/runtime';
 import Phaser from 'phaser';
-import config from './Config/config.js';
-import GameScene from './scenes/gameScene.js';
-import BootScene from './scenes/bootScene.js';
-import PreloaderScene from './scenes/preloaderScene.js';
-import TitleScene from './scenes/titleScene.js';
-import GameOverScene from './scenes/gameOverScene.js';
-import LeaderboardScene from './scenes/leaderboardScene.js';
+import config from './Config/config';
+import GameScene from './scenes/gameScene';
+import BootScene from './scenes/bootScene';
+import PreloaderScene from './scenes/preloaderScene';
+import TitleScene from './scenes/titleScene';
+import GameOverScene from './scenes/gameOverScene';
+import LeaderboardScene from './scenes/leaderboardScene';
 
 class Game extends Phaser.Game {
   constructor() {

@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 const saveScore = async (user, score) => {
   const data = {};
   data.user = user || 'Default User';

@@ -29,7 +29,7 @@
 
 ## Live Demo
 
-[Play Cat Jump]()
+[Play Game]()
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
 - On the top of the page there is a green button name "Code"
 - Click on the "Code" button.
 - A Menu will appear click in "Download Zip"
-- Save the "phaser3-plataformer-feature-full-game.zip" file on your computer.
+- Save the "endlessrunner game.zip" file on your computer.
 - Extract the contents you just downloaded in a folder.
 
 ### Prerequisites

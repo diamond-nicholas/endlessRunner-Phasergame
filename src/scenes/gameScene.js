@@ -33,7 +33,7 @@ export default class GameScene extends Phaser.Scene {
       platform = this.physics.add.sprite(
         posX,
         Phaser.Math.Between(464, 650),
-        'platform'
+        'platform',
       );
       platform.setImmovable(true);
       platform.setVelocityX(-350);
@@ -47,8 +47,8 @@ export default class GameScene extends Phaser.Scene {
   // Make Player jump.
   jump() {
     if (
-      this.player.body.touching.down ||
-      (this.playerJumps > 0 && this.playerJumps < 2)
+      this.player.body.touching.down
+      || (this.playerJumps > 0 && this.playerJumps < 2)
     ) {
       if (this.player.body.touching.down) {
         this.playerJumps = 0;
@@ -126,7 +126,7 @@ export default class GameScene extends Phaser.Scene {
           this.player.anims.play('run');
         }
       },
-      null
+      null,
     );
     // Checking for input.
     this.input.on('pointerdown', this.jump, this);
@@ -151,7 +151,7 @@ export default class GameScene extends Phaser.Scene {
     // Refreshes the score each second.
     this.score += 1 / 60;
     this.scoreText.setText(
-      `Score: ${Phaser.Math.RoundTo(this.score, 0)} seconds`
+      `Score: ${Phaser.Math.RoundTo(this.score, 0)} seconds`,
     );
     //------------------------------------------------------------
 
