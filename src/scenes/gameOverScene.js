@@ -1,4 +1,3 @@
-/* eslint-disable comma-dangle */
 import Phaser from 'phaser';
 import { saveScore } from './util';
 
@@ -100,14 +99,14 @@ export default class GameOverScene extends Phaser.Scene {
   centerButton(gameObject, offset = 0) {
     Phaser.Display.Align.In.Center(
       gameObject,
-      this.add.zone(400, 300 - offset * 100, 800, 600)
+      this.add.zone(400, 300 - offset * 100, 800, 600),
     );
   }
 
   centerButtonText(gameText, offset = 0) {
     Phaser.Display.Align.In.Center(
       gameText,
-      this.add.zone(400, 300 - offset * 100, 800, 600)
+      this.add.zone(400, 300 - offset * 100, 800, 600),
     );
   }
 }

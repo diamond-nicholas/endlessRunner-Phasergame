@@ -1,4 +1,3 @@
-/* eslint-disable comma-dangle */
 const saveScore = async (user, score) => {
   const data = {};
   data.user = user || 'Default User';
@@ -15,7 +14,7 @@ const saveScore = async (user, score) => {
       redirect: 'follow',
       referrerPolicy: 'no-referrer',
       body: JSON.stringify(data),
-    }
+    },
   );
   return resp.json();
 };
@@ -28,7 +27,7 @@ const getScore = async () => {
       mode: 'cors',
       redirect: 'follow',
       referrerPolicy: 'no-referrer',
-    }
+    },
   );
   return resp.json();
 };

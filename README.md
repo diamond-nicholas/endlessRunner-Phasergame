@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# endlessRunner-Phasergame
+# EndlessRunner-Phasergame
 
 > An endless runner game built wiht Javascript and Phaser 3.
 
@@ -8,7 +8,7 @@
 
 ## Game instructions
 
-- This game is an endless runner platformer. The plataforms appear infinitly until the game ends and the game character (a cat) has to jump from building to building.
+- This game is an endless runner. The platforms appear infinitly until the game ends and the game character (a cat) has to jump from building to building.
 - If the cat falls below the edge of the screen the game ends.
 - Your progress (score) is measured in seconds. The longer the cat stays "alive" higher the score.
 - To jump you have to simply click on the screen with the left mouse button.

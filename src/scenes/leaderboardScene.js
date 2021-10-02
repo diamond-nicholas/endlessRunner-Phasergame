@@ -1,4 +1,3 @@
-/* eslint-disable comma-dangle */
 import Phaser from 'phaser';
 import { getScore, sortArray } from './util';
 
@@ -29,7 +28,7 @@ export default class LeaderboardScene extends Phaser.Scene {
           250,
           i * 40 + 100,
           `${sortedArray[i].user}: ${sortedArray[i].score} seconds`,
-          { fontSize: '25px', fill: '#fff' }
+          { fontSize: '25px', fill: '#fff' },
         );
       }
     });
@@ -62,14 +61,14 @@ export default class LeaderboardScene extends Phaser.Scene {
   centerButton(gameObject, offset = 0) {
     Phaser.Display.Align.In.Center(
       gameObject,
-      this.add.zone(400, 300 - offset * 100, 800, 600)
+      this.add.zone(400, 300 - offset * 100, 800, 600),
     );
   }
 
   centerButtonText(gameText, offset = 0) {
     Phaser.Display.Align.In.Center(
       gameText,
-      this.add.zone(400, 300 - offset * 100, 800, 600)
+      this.add.zone(400, 300 - offset * 100, 800, 600),
     );
   }
 }
