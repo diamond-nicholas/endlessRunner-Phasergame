@@ -1,11 +1,24 @@
-import 'phaser';
+import 'regenerator-runtime/runtime.js';
+import Phaser from 'phaser';
+import config from './Config/config.js';
+import GameScene from './scenes/gameScene.js';
+import BootScene from './scenes/bootScene.js';
+import PreloaderScene from './scenes/preloaderScene.js';
+import TitleScene from './scenes/titleScene.js';
+import GameOverScene from './scenes/gameOverScene.js';
+import LeaderboardScene from './scenes/leaderboardScene.js';
 
-import SimpleScene from './scenes/simple-scene';
+class Game extends Phaser.Game {
+  constructor() {
+    super(config);
+    this.scene.add('Boot', BootScene);
+    this.scene.add('Preloader', PreloaderScene);
+    this.scene.add('Title', TitleScene);
+    this.scene.add('GameOver', GameOverScene);
+    this.scene.add('Leaderboard', LeaderboardScene);
+    this.scene.add('Game', GameScene);
+    this.scene.start('Boot');
+  }
+}
 
-const gameConfig = {
-  width: 680,
-  height: 400,
-  scene: SimpleScene,
-};
-
-new Phaser.Game(gameConfig);
+window.game = new Game();
