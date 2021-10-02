@@ -4,7 +4,7 @@
 
 > An endless runner game built wiht Javascript and Phaser 3.
 
-![screenshot](./assets/game.png)
+![screenshot](.src/assets/game.png)
 
 ## Game instructions
 
