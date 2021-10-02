@@ -4,7 +4,7 @@
 
 > An endless runner game built wiht Javascript and Phaser 3.
 
-![screenshot](./screenshots/)
+![screenshot](./assets/game.png)
 
 ## Game instructions
 
@@ -29,7 +29,7 @@
 
 ## Live Demo
 
-[Play Game]()
+[Play Game](https://endlessrunnernicholas.netlify.app/)
 
 ## Getting Started
 
